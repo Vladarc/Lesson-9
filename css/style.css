@@ -1,8 +1,6 @@
 *{
 box-sizing: border-box;
 }
-
-
 @font-face {
 font-family: 'misoregular';
 src: url('../fonts/miso-webfont.woff2') format('woff2'),
@@ -18,95 +16,96 @@ src: url('../fonts/miso-bold-webfont.woff2') format('woff2'),
 url('../fonts/miso-bold-webfont.woff') format('woff');
 font-weight: 600;
 font-style: normal;
-
 }
-
-
-
-
-
-
 html{
 font-size: 10px;
-
 }
-
 body{
-margin: 0;
 padding: 50px;
+margin: 0;
 font-size: 2rem;
 }
 h2{
-margin: 0 0 30px;
-padding-right: 10px;
-font-family: 'misoregular',sans-serif;
-font-weight: normal;
+margin: 0 auto;
+padding: 0 0 25px 0;
 font-size: 5.6rem;
+line-height: 1;
+color: #333333;
+font-family: 'misoregular';
+font-weight: normal;
+transition: color .3s ease-in;
 
 }
-a{
-text-decoration: none;
-color: #333333;
+h2+span{
+color:black ;
+padding: 0 5px;
+text-align: center;
+font-size: 2rem;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+color: rgba(0, 0, 0, 0.7);
+
 }
-.container{
+.container { 
 max-width: 1200px;
 margin: 0 auto;
+background-color: #fdde7e;
 }
-.row{
+
+.wrraper { 
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: #fdde7e;
+padding: 40px 25px;
 }
-.col{
-width: 365px;
-margin: 50px 30px;
+a{
+display: block;
+width: 100%;
+height: 100%;
+text-decoration: none;
+}
+.card img {
+max-width: 100%;
+}
+.card {
+background-color: #fff;
+flex: 0 1 calc(30% + 15px);
+}
+.items__wrraper{
 display: flex;
 flex-direction: column;
-text-align: center;
-background-color: #fff;
-box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, .35);
+align-items: center;
+padding: 40px 10px 30px;
 }
-.price{
-font-family: 'misobold',sans-serif;
-padding-right: 10px;
-font-weight: 600;
-font-size: 6rem;
-color: #02995b;
-}
-.price::before{
+.card__price span::before{
 content: "$";
 }
-.col__img--small{
-padding: 15px 0 35px ;
-}
-.col__img--height{
-padding: 40px ;
-}
-.col__description{
-font-family: 'Lato', sans-serif;
-font-weight: 400;
-color: rgba(0, 0, 0, 0.7);
-font-size: 2rem;
-}
-.col--wide{
+.card--height{
 padding: 50px 10px;
 }
-.col--small{
-padding: 30px 10px;
+.smaller__card-img-padding img{
+padding: 20px 0 25px;
 }
-.a--bronze:hover{
+
+.bigger__card-img-padding img{
+padding: 40px 0;
+}
+
+.card__price {
+font-family: 'misobold',sans-serif;
+font-weight: 600;
+font-size: 7rem;
+color: #02995b;
+padding: 0 20px 0 10px;
+}
+.title--bronze:hover{
 color: #ff7900;
 }
-.a--gold:hover{
-    color: #ffca28;
+.title--gold:hover{
+color: #ffca28;
 }
-.a--silver:hover{
-    color: #bdbdbd;
+.title--silver:hover{
+color: #bdbdbd;
 }
-a:hover,
-a:active,
-a:focus{
-    transition: color .3s ease-in;
-    cursor: pointer;
-}
+
+
