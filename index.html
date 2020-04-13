@@ -1,88 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Cards</title>
+    <title>Cups</title>
 </head>
-
 <body>
-    <div class="container">
-        <main>
-            <div class="wrraper">
+    
+    <main class="container">
+    <div class="row">
 
-                <div class="card ">
-
-                    <a href="#">
-                        <div class="items__wrraper smaller__card-img-padding img">
-                            <div class="card__price">
-                                <span>2</span>
-                            </div>
-                            <img src="./img/cup-bronze.png" alt="Bronze&Cup">
-                            <h2 class="title--bronze">Bronze</h2>
-
-                            <span>
-                                any cup of coffee<br>
-                                until $3
-                            </span>
-                        </div>
-                    </a>
-
-                </div>
-
-
-                <div class="card ">
-
-                    <a href="#">
-                        <div class="items__wrraper bigger__card-img-padding img card--height">
-                            <div class="card__price">
-                                <span>3</span>
-                            </div>
-                            <img src="./img/cup-gold.png" alt="Gold&Cup">
-                            <h2 class="title--gold">Gold</h2>
-
-                            <span>
-                                any cup of coffee<br>
-                                until $5
-                            </span>
-                        </div>
-                    </a>
-
-
-                </div>
-
-
-                <div class="card">
-
-                    <a href="#">
-
-                        <div class="items__wrraper smaller__card-img-padding img">
-                            <div class="card__price">
-                                <span>2.5</span>
-                            </div>
-                            <img src="./img/cup-silver.png" alt="Silver&Cup">
-                            <h2 class="title--silver">Silver</h2>
-
-                            <span>
-                                any cup of coffee<br>
-                                until $4
-                            </span>
-
-                        </div>
-                    </a>
-                </div>
-
-
-
-
-
-            </div>
-        </main>
+    <div class="col col--1-3">
+    <a href="" class="card">
+    <h2 class="card__price" value="$">2</h2>
+    <img src="./img/cup-bronze.png" class="card__img" alt="BronzeCup">
+    <h3 class="card__caption card__caption--bronze">Bronze</h3>
+    <span class="card__description">any cup of coffee<br>
+        until $3</span>
+    </a>
     </div>
-</body>
 
+    <div class="col col--1-3">
+    <a href="" class="card card--primary">
+    <h2 class="card__price card__price--primary" value="$">3</h2>
+    <img src="./img/cup-gold.png" alt="GoldCup" class="card__img">
+    <h3 class="card__caption card__caption--gold">Gold</h3>
+    <span class="card__description">any cup of coffee<br>
+        until $5</span>
+    </a>
+    </div>
+
+    <div class="col col--1-3">
+    <a href="" class="card">
+    <h2 class="card__price" value="$" >2.5</h2>
+    <img src="./img/cup-silver.png" alt="SilverCup" class="card__img">
+    <h3 class="card__caption card__caption--silver">Silver</h3>
+    <span class="card__description">any cup of coffee<br>
+        until $4</span>
+    </a>
+    </div>
+
+       
+   
+
+       
+
+
+
+    </div> 
+    </main>
+
+
+</body>
 </html>
